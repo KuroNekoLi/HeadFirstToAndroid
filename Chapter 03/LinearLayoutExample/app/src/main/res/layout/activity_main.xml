@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 定義android名稱空間 ，必須設為以下。此定義可讓你的layout讀取它需要的元素和屬性-->
+<!-- dp/sp-->
+<!-- padding start, end.....-->
+<!-- editText繼承自TextView-->
+<!-- inputType: text, textMultiLine, phone, textPassword, textCapSentences...-->
+<!-- weight -->
+<!-- gravity -->
+<!-- layout gravity -->
+<!-- layout gravity是view本身的位置，gravity是view內容的位置，都能用| -->
+<!-- margin -->
+<!-- layout inflater -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:paddingHorizontal="20dp"
     tools:context=".MainActivity" >
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/to"
-        android:inputType="text"
+        android:inputType="phone"
         android:autofillHints="" />
 
     <EditText
